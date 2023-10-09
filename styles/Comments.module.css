@@ -1,0 +1,104 @@
+.index > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: var(--padding-primary);
+    background-color: var(--background-secondary);
+    border: var(--border-primary);
+    border-radius: var(--border-radius);
+}
+.index > div > div:first-of-type{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: gray;
+    gap: 10px;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 8px;
+}
+.index > div > div:first-of-type > div:first-of-type{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.index > div > div:first-of-type > div:first-of-type > img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: var(--border-primary);
+}
+.index > div > div:first-of-type > div:first-of-type > div{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 12px;
+}
+.index > div > div:last-of-type{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+}
+.index > div > div:last-of-type > form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.index > div > div:last-of-type > form > button{
+    width: 100%;
+    font-size: 14px;
+    background-color: var(--backg);
+    padding: var(--padding-primary);
+    color: white;
+    border-radius: var(--border-radius);
+}
+.index > div > div:last-of-type > p{
+    font-size: 12px;
+    width: 90%;
+    line-height: 2;
+    text-align: justify;
+}
+.index > div > div:last-of-type > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+}
+.index > div > div:last-of-type > div > svg{
+    cursor: pointer;
+}
+.index > div > div:last-of-type > div > svg:first-of-type{
+    color: var(--backg);
+}
+.index > div > div:last-of-type > div > svg:last-of-type{
+    color: #ff0000ab;
+}
+.posts .loader {
+    animation: spin 2s linear infinite;
+}
+.posts .error{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    color: #E06469;
+    margin: 6px 10px 0 0;
+    font-size: 13px;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@media screen and (max-width: 320px) {
+    .index > div > div:first-of-type > div:first-of-type > img{
+        width: 40px;
+        height: 40px;
+    }
+    .index > div > div:first-of-type > div:first-of-type > div{
+        font-size: 11px;
+    }
+    .index > div > div:first-of-type{
+        font-size: 11px;
+    }
+}

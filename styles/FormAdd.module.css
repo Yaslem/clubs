@@ -1,0 +1,39 @@
+.add{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+.add form{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+.add form > div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    padding: var(--padding-primary);
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+.add form > div > div{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.add form button,
+.add form span{
+    padding: var(--padding-primary);
+    border: 0;
+    background-color: #163962;
+    border-radius: var(--border-radius);
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+}
+.add form button:hover{
+    background-color: #b05b3b;
+}

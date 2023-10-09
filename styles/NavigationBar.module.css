@@ -1,0 +1,24 @@
+.index ul{
+    list-style: none;
+    display: flex;
+    width: fit-content;
+}
+.index ul a{
+    padding: 6px;
+    border-right: 1px;
+    border-left: 0px;
+    border-top: 1px;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: #ccc;
+    background-color: white;
+    font-size: 13px;
+    color: gray;
+}
+.index ul a:hover{
+    color: black;
+}
+.index ul a:last-of-type{
+    border: 1px solid #ccc;
+    border-radius: 70px 0 0 70px;
+}

@@ -1,0 +1,77 @@
+.register{
+    padding: 80px;
+    height: 100vh;
+    overflow: auto;
+    background-image: url('/img/background-login.svg');
+}
+.register > img{
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto 20px;
+}
+.register > div{
+    padding: var(--padding-primary);
+    background-color: white;
+    border-radius: var(--border-radius);
+    display: flex;
+    gap: var(--gap);
+    max-width: 500px;
+    margin: auto;
+}
+.register > div.reg{
+    max-width: 600px;
+}
+.login{
+    flex-direction: row-reverse;
+}
+.register > div > section:first-of-type{
+    padding: var(--padding-primary);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    width: 100%;
+}
+.register > div > section:first-of-type .footer{
+    text-align: center;
+    font-size: 15px;
+    color: gray;
+}
+.register > div > section:first-of-type .footer a{
+    color: var(--backg);
+}
+.loader {
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@media screen and (max-width: 768px) {
+    .register{
+        padding: 40px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .register > img{
+        width: 100px;
+        height: 100px;
+    }
+    .register > div > section:first-of-type{
+        padding: 0;
+    }
+}
+@media screen and (max-width: 480px) {
+    .register{
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .register{
+        padding: 10px;
+    }
+    .register > div > section:first-of-type .footer{
+        font-size: 13px;
+    }
+}

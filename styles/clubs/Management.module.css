@@ -1,0 +1,23 @@
+.index{
+    display: flex;
+    justify-content: space-between;
+    gap: var(--gap);
+}
+.index > a{
+    padding: var(--padding-primary);
+    background-color: var(--backg);
+    color: white;
+    border-radius: var(--border-radius);
+    border: var(--border-primary);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    min-width: 94px;
+}
+.index > a svg{
+    font-size: 20px;
+}
+.index > a span{
+    font-size: 15px;
+}

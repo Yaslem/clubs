@@ -1,0 +1,12 @@
+.back{
+    font-size: 30px;
+    color: #ab5b41;
+    cursor: pointer;
+    width: fit-content;
+}
+
+@media screen and (max-width: 320px) {
+    .back{
+        font-size: 25px;
+    }
+}

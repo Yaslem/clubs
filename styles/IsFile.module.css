@@ -1,0 +1,28 @@
+.index{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.index li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 15px;
+    padding: var(--padding-primary);
+    background-color: white;
+    color: var(--backg);
+    border: var(--border-primary);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+.index li.active{
+    color: white;
+    background-color: var(--backg);
+}
+@media screen and (max-width: 320px) {
+    .index li {
+        font-size: 13px;
+    }
+}

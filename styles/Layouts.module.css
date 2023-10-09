@@ -1,0 +1,25 @@
+.layouts{
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+    position: relative;
+}
+.layouts .index{
+    padding: var(--padding);
+    border-top: var(--border-primary);
+    background-color: #f8f9f7;
+    height: calc(100vh - 112px);
+    overflow-y: auto;
+    border-bottom: var(--border-primary);
+    border-left: var(--border-primary);
+}
+@media screen and (max-width: 600px) {
+    .layouts .index{
+        padding: 15px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .layouts .index{
+        padding: var(--padding-primary);
+    }
+}

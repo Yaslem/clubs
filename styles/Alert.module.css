@@ -1,0 +1,97 @@
+.alert{
+    padding: var(--padding-primary);
+    align-items: center;
+    width: 100%;
+    gap: var(--gap);
+    display: flex;
+    border-radius: var(--border-radius);
+}
+.error{
+    background-color: #fcaeae30;
+    border: 2px solid #FF8989;
+}
+.error > span{
+    background-color: #FF6666;
+}
+.error > div h5{
+    color: #FF6666;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.error > div p{
+    color: #d76464;
+    font-size: 13px;
+}
+.warning{
+    background-color: #fef7ea;
+    border: 2px solid #fcbf2069;
+}
+.success{
+    background-color: #A2C57924;
+    border: 2px solid #617A5566;
+}
+.success > span {
+    background-color: #617A55;
+}
+.success > div h5{
+    color: #617A55;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.success > div p{
+    color: #617A55;
+    font-size: 13px;
+}
+.warning > span{
+    background-color: #fec126;
+}
+.warning > div h5{
+    color: #F29727;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.warning > div p{
+    color: #F29727;
+    font-size: 13px;
+}
+.alert > span{
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.alert > span svg{
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+.alert > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+@media screen and (max-width: 320px) {
+    .error > div h5{
+        font-size: 14px;
+    }
+    .error > div p{
+        font-size: 10px;
+    }
+    .alert > span svg{
+        width: 20px;
+        height: 20px;
+    }
+    .success > div h5{
+        font-size: 14px;
+    }
+    .success > div p{
+        font-size: 10px;
+    }
+    .warning > div h5{
+        font-size: 14px;
+    }
+    .warning > div p{
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,428 @@
+.index{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+.index > div:first-of-type{
+    background-color: white;
+    border-radius: var(--border-radius);
+    border: var(--border-primary);
+    overflow: hidden;
+}
+.index > div:first-of-type > div:first-of-type > img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: var(--border-primary);
+}
+.index > div:first-of-type > div:first-of-type > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding-primary);
+}
+.index > div:first-of-type > div:first-of-type > div > div:first-of-type{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.index > div:first-of-type > div:first-of-type > div > div:first-of-type > img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: -70px;
+    border: 5px solid white;
+}
+.index > div:first-of-type > div:first-of-type > div > div:first-of-type > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.index > div:first-of-type > div:first-of-type > div > div:first-of-type > div h6{
+    font-size: 20px;
+    color: var(--backg);
+}
+.index > div:first-of-type > div:first-of-type > div > div:first-of-type > div span{
+    font-size: 13px;
+    color: gray;
+}
+.index > div:first-of-type > div:last-of-type{
+    padding: var(--padding-primary);
+    border-top: var(--border-primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.index > div:first-of-type > div:last-of-type > section{
+    padding: var(--padding-primary);
+    background-color: var(--backg);
+    color: white;
+    border-radius: var(--border-radius);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: var(--border-primary);
+    cursor: pointer;
+}
+.index > div:first-of-type > div:last-of-type > ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.index > div:first-of-type > div:last-of-type > ul li{
+    padding: var(--padding-primary);
+    background-color: #f0f8ff54;
+    font-size: 14px;
+    width: fit-content;
+    border-radius: var(--border-radius);
+    color: var(--backg);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    border: var(--border-primary);
+}
+.index > div:first-of-type > div:last-of-type > ul li.active{
+    background-color: var(--backg);
+    color: white;
+}
+.index > div:last-of-type > section{
+    display: flex;
+    gap: 10px;
+}
+.index > div:last-of-type > div,
+.index > div:last-of-type > section > div:first-of-type{
+    width: 30%;
+    padding: var(--padding-primary);
+    background-color: white;
+    border: var(--border-primary);
+    border-radius: var(--border-radius);
+}
+.index > div:last-of-type > div > ul,
+.index > div:last-of-type > section > div:first-of-type > ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+.index > div:last-of-type > div > ul > div > div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+.index > div:last-of-type > div > ul > div > div:last-of-type > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #f8f9f7;
+    padding: var(--padding-primary);
+    border: var(--border-primary);
+    border-radius: var(--border-radius);
+    align-items: center;
+}
+.index > div:last-of-type > div > ul > div > div:first-of-type{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 auto;
+    gap: 10px;
+    background-color: #f8f9f7;
+    padding: var(--padding-primary);
+    border: var(--border-primary);
+    border-radius: var(--border-radius);
+    align-items: center;
+}
+.index > div:last-of-type > div > ul > div > div > div > img,
+.index > div:last-of-type > div > ul > div > div > img{
+    width: 50px;
+    border-radius: 50%;
+    border: var(--border-primary);
+}
+.index > div:last-of-type > div > ul > div > div > div > div,
+.index > div:last-of-type > div > ul > div > div > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.index > div:last-of-type > div > ul > div > div > div > div > h4,
+.index > div:last-of-type > div > ul > div > div > div > h4{
+    font-size: 16px;
+    color: var(--backg);
+}
+.index > div:last-of-type > div > ul > div > hr{
+    height: 0;
+    border: 1px dashed #8080803b;
+    margin: 12px 0;
+}
+.index > div:last-of-type > div > ul > li,
+.index > div:last-of-type > section > div:first-of-type > ul > li{
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: var(--padding-primary);
+}
+.index > div:last-of-type > div > ul > li > svg,
+.index > div:last-of-type > section > div:first-of-type > ul > li > svg{
+    font-size: 25px;
+    color: var(--backg);
+}
+.index > div:last-of-type > div > ul > li > div,
+.index > div:last-of-type > section > div:first-of-type > ul > li > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.index > div:last-of-type > div,
+.index > div:last-of-type > section > div:first-of-type > ul > li > div > span{
+    font-size: 18px;
+    color: var(--backg);
+}
+.index > div:last-of-type > div,
+.index > div:last-of-type > section > div:first-of-type > ul > li > div > p{
+    font-size: 13px;
+    text-align: justify;
+    line-height: 2;
+    color: gray;
+}
+.index > div:last-of-type > section > div:last-of-type{
+    width: calc(70% - 10px);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+.index > div:last-of-type > section > div:last-of-type > div:first-of-type{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.index > div:last-of-type > section > div:last-of-type > div:first-of-type > div{
+    padding: var(--padding-primary);
+    background-color: white;
+    border: var(--border-primary);
+    border-radius: var(--border-radius);
+    color: var(--backg);
+    font-size: 14px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    width: 30%;
+    text-align: center;
+}
+.index > div:last-of-type > section > div:last-of-type > div:first-of-type > div.active{
+    background-color: var(--backg);
+    color: white;
+}
+.index > div:last-of-type > section > div:last-of-type > div:nth-child(2){
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gap);
+}
+.index > div:last-of-type > section > div:last-of-type > div:nth-child(2) > div{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    padding: var(--padding-primary);
+    background-color: white;
+    border: var(--border-primary);
+    border-radius: var(--border-radius);
+}
+.index > div:last-of-type > section > div:last-of-type > div:nth-child(2) > div > div:first-of-type{
+    height: 80px;
+    line-height: 2;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: var(--backg);
+    border: 1px solid #cccccc4f;
+    border-radius: var(--border-radius);
+    background-color: #f8f9f7;
+}
+.index > div:last-of-type > section > div:last-of-type > div:nth-child(2) > div > div:last-of-type > ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.index > div:last-of-type > section > div:last-of-type > div:nth-child(2) > div > div:last-of-type > ul > li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: gray;
+}
+.index > div:last-of-type > section > div:last-of-type > div:nth-child(2) > div > div:last-of-type > ul > li > div{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.index > div:last-of-type > section > div:last-of-type > div:nth-child(2) > div > div:last-of-type > ul > li > div > svg{
+    color: var(--backg);
+}
+.index > div:last-of-type > section > div:last-of-type > div:nth-child(2) > div > div:last-of-type > ul > hr{
+    border: 1px dashed;
+    color: gray;
+}
+
+.index .posts{
+    border: var(--border-primary);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    height: fit-content;
+}
+.index .posts:hover{
+    border: var(--border-secondary);
+}
+.index .posts > img{
+    width: 100%;
+    background-color: white;
+    border-bottom: var(--border-primary);
+    height: 200px;
+    object-fit: cover;
+}
+.index .posts > section{
+    padding: var(--padding-primary);
+    background-color: white;
+    margin-top: -6px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.index .posts > section > hr{
+    border: 1px dashed #ccc;
+}
+.index .posts > section > div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.index .posts > section > div:nth-child(1) > h5{
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 2;
+    color: var(--backg);
+    font-weight: 400;
+}
+.index .posts > section > div:nth-child(1) > p{
+    font-size: 13px;
+    line-height: 2;
+    text-align: justify;
+    color: gray;
+}
+.index .posts > section > div:nth-child(3){
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.index .posts > section > div:nth-child(3) > img{
+    width: 35px;
+    border-radius: 50%;
+    border: var(--border-primary);
+    height: 35px;
+    object-fit: cover;
+}
+.index .posts > section > div:nth-child(3) > div{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: gray;
+}
+.index .posts > section > div:nth-child(3) > div > h4{
+    font-size: 12px;
+    font-weight: 400;
+    color: gray;
+}
+.index .posts > section > div:nth-child(3) > div > span{
+    font-size: 11px;
+}
+.index .posts > section > div:nth-child(5){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.index .posts > section > div:nth-child(5) > div{
+    padding: 6px;
+    background-color: #f8f9f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radius);
+    color: gray;
+    border: var(--border-primary);
+}
+.index .posts > section > div:nth-child(5) > div:first-of-type{
+    width: 45px;
+    cursor: pointer;
+}
+.index .posts > section > div:nth-child(5) > div:last-of-type{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.index .posts > section > div:nth-child(5) > div:last-of-type > div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.index .posts > section > div:nth-child(5) > div:last-of-type > div > svg{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .index > div:last-of-type > section > div:first-of-type{
+        display: none;
+    }
+    .index > div:last-of-type > section > div:last-of-type{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .index > div:first-of-type > div:last-of-type > ul li{
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .index > div:first-of-type > div:last-of-type > ul li > span{
+        display: none;
+    }
+    .index > div:last-of-type > section > div:last-of-type > div:nth-child(2){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--gap);
+    }
+}
+@media screen and (max-width: 600px) {
+    .index > div:last-of-type > section > div:last-of-type > div:nth-child(2){
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width: 480px) {
+    .index > div:last-of-type > section > div:last-of-type > div:first-of-type > div > span{
+        display: none;
+    }
+    .index > div:first-of-type > div:last-of-type > section > span{
+        display: none;
+    }
+    .index > div:first-of-type > div:first-of-type > div > div:first-of-type > div h6{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .index > div:first-of-type > div:first-of-type > div > div:first-of-type > div h6{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 300px) {
+    .index > div:first-of-type > div:last-of-type{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,68 @@
+.filter{
+     display: grid;
+    grid-template-columns: repeat(4, 1fr);
+     padding: var(--padding-primary);
+     gap: var(--gap);
+     background-color: white;
+     border-radius: var(--border-radius);
+     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.filter.isBac{
+    grid-template-columns: repeat(5, 1fr);
+}
+.filter > div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.filter > div > label{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: 13px;
+}
+.filter > div > span{
+    cursor: pointer;
+    width: 40px;
+    background-color: #163962;
+    font-size: 20px;
+    padding: var(--padding-primary);
+    color: white;
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    display: flex;
+    height: 42px;
+    justify-content: center;
+    left: 0;
+    align-items: center;
+    position: absolute;
+    top: 36px;
+}
+.filter > div > label svg{
+    font-size: 20px;
+    color: #b05b3b;
+}
+.filter > div > label span{
+    font-size: 17px;
+}
+.filter > div > input{
+    background-color: #f9fbfd;
+}
+@media screen and (max-width: 716px) {
+    .filter,
+    .filter.isBac{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 534px) {
+    .filter,
+    .filter.isBac{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* @media screen and (max-width: 436px) {
+    .filter,
+    .filter.isBac{
+        grid-template-columns: repeat(1, 1fr);
+    }
+} */

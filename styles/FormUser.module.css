@@ -1,0 +1,156 @@
+.user{
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+    padding: var(--padding-primary);
+    background-color: white;
+    border-radius: var(--border-radius);
+    border: var(--border-primary);
+}
+.user > form{
+    width: 100%;
+}
+.user > form > div{
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.user > form > div:not(:last-of-type){
+    margin-bottom: 20px;
+}
+.user > form > div > section{
+    display: flex;
+    justify-content: space-between;
+    grid-column: span 3;
+    gap: 10px;
+}
+.user > form > div > section > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.user > form > div > section > div:first-of-type{
+    width: calc(100% - 200px);
+}
+.user > form > div > section > div:last-of-type{
+    width: 200px;
+}
+.user > form > div > div,
+.user > form > div > section > div > div{
+    transition: all 2s;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.user > form > div > div:has(textarea){
+    grid-column: span 3;
+}
+.user > form > div > section > div:last-of-type > div > div{
+    width: 200px;
+    background-color: var(--background-color);
+    border: var(--border-primary);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 26px;
+    z-index: 8;
+    cursor: pointer;
+}
+
+.user > form > div > section > div > div > div svg{
+    font-size: 100px;
+    color: gray;
+}
+.user > form > div > section > div > div > div img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.user > form > div > section > div:last-of-type > div input{
+    padding: var(--padding-primary);
+    background-color: var(--background-color);
+    border: var(--border-primary);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    height: 120px;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+}
+.user > form > div > div:not(:last-of-type){
+    margin-bottom: 13px;
+}
+.user .error{
+    display: flex;
+    /*align-items: center;*/
+    flex-direction: row;
+    gap: 6px;
+    color: #E06469;
+    margin: 6px 10px 0 0;
+    font-size: 13px;
+}
+.user .loader {
+    animation: spin 2s linear infinite;
+}
+.user .mess{
+    text-align: center;
+    margin: 10px auto;
+    width: fit-content;
+    font-size: 15px;
+}
+.user .forget{
+    display: flex;
+    flex-direction: row;
+    /*align-items: center;*/
+    justify-content: space-between;
+    color: gray;
+}
+.user form button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    padding: 8px;
+    border-radius: var(--border-radius);
+    border: 0;
+    font-size: 16px;
+    color: white;
+    background-color: var(--backg);
+    cursor: pointer;
+    border: var(--border-primary);
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@media screen and (max-width: 600px) {
+    .user > form > div{
+        display: flex;
+        flex-direction: column;
+    }
+    .user > form > div > section{
+        flex-direction: column;
+    }
+    .user > form > div > section .images{
+        flex-direction: row;
+    }
+    .user > form > div > section > div:first-of-type{
+        width: 100%;
+    }
+    .user > form > div > section > div:last-of-type{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 320px) {
+    .user form button{
+        font-size: 14px;
+    }
+}

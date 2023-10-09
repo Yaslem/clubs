@@ -1,0 +1,15 @@
+.index{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.table{
+    width: 100%;
+    overflow: auto;
+    border-radius: var(--border-radius);
+}

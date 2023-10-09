@@ -1,0 +1,89 @@
+.index > form{
+    padding: var(--padding-primary);
+    background-color: white;
+    border: var(--border-primary);
+    border-radius: var(--border-radius);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+}
+.index > form > button{
+    width: 100%;
+    grid-column: span 3;
+    padding: var(--padding-primary);
+    border: var(--border-primary);
+    color: white;
+    background-color: var(--backg);
+    font-size: 19px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+.index > form > div{
+    display: flex;
+    flex-direction: column;
+}
+.index > form > div > div{
+    background-color: #f8f9f7;
+    padding: var(--padding-primary);
+    border-radius: var(--border-radius);
+    border: 1px solid #ccc3;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.index > form > div:last-of-type{
+    grid-column: span 2;
+}
+.index > form > div > div > div:not(:last-of-type){
+    border-bottom: 1px dashed #ccc;
+}
+.index > form > div > div > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding-primary) 0;
+}
+.index > form > div > div > div > div,
+.index > form > div > div > div > span{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #7e7e7e;
+    font-size: 13px;
+}
+.index > form > div > div > div > input{
+    width: 20px;
+    height: 20px;
+}
+.index > form > div .error{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    color: #E06469;
+    margin: 6px 10px 0 0;
+    font-size: 13px;
+}
+.loader {
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media screen and (max-width: 768px) {
+    .index > form{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 480px) {
+    .index > form > button{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .index > form > button{
+        font-size: 14px;
+    }
+}

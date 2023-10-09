@@ -1,0 +1,22 @@
+.top{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+.top > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.top > div > span{
+    padding: var(--padding-primary);
+    background-color: #edf1f6;
+    width: fit-content;
+    border-radius: var(--border-radius);
+    font-size: 18px;
+    color: #163962;
+    border-right: 6px solid #163962;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}

@@ -1,0 +1,40 @@
+.index{
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+}
+.index table{
+    width: 100%;
+    border-collapse: collapse;
+    overflow: auto;
+}
+.index table th{
+    padding: 8px;
+    background-color: #163962;
+    font-size: 20px;
+    color: white;
+}
+.index table td{
+    padding: var(--padding-primary);
+    text-align: center;
+    font-size: 20px;
+    color: gray;
+}
+.index table td:has(span){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #0A6EBD;
+    cursor: pointer;
+}
+.index table td:has(span) span:last-of-type{
+    color: #FF6D60
+}
+.index table tbody tr:not(:last-of-type){
+    border-bottom: 1px solid #ccc;
+}
+.index table tbody tr:hover td:not(:has(span)){
+    color: black;
+}

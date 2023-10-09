@@ -1,0 +1,13 @@
+.index{
+    padding: var(--padding-primary);
+    background-color: white;
+    border: var(--border-primary);
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    color: #FF6666;
+    cursor: pointer;
+    gap: 6px;
+    width: fit-content;
+    font-size: 14px;
+}

@@ -1,0 +1,77 @@
+.index{
+    overflow: auto hidden;
+    border-radius: var(--border-radius);
+    border: var(--border-primary);
+}
+.index .table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+    padding: var(--padding-primary);
+    table-layout: auto;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.index .table thead th {
+    padding: 16px 12px;
+    font-size: 13px;
+    background-color: var(--backg);
+    color: white;
+    text-align: center;
+
+}
+
+.index .table thead th:first-child {
+    border-top-right-radius: var(--border-radius);
+}
+
+.index .table thead th:last-child {
+    border-top-left-radius: var(--border-radius);
+}
+
+.index .table tbody td {
+    padding: 13px;
+    text-align: center;
+    background-color: white;
+    font-size: 13px;
+    line-height: 1.3;
+}
+.index .table tbody td .isAttend{
+    padding: 4px;
+    background-color: #f8f9f7;
+    border: 1px dashed #ccc;
+    border-radius: var(--border-radius);
+    color: gray;
+    cursor: pointer;
+}
+.index .table tbody td img{
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+}
+
+.index .table tbody td:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.index .table tbody td:last-child span,
+.index .table tbody td:last-child a{
+    display: flex;
+    background-color: #F1F6F5;
+    border-radius: 50%;
+    padding: 3px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+.index .table tbody tr:not(:last-of-type) {
+    border-bottom: 1px dashed #ccc;
+}

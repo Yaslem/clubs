@@ -1,0 +1,31 @@
+.paginate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 20px;
+}
+.paginate > span{
+    padding: var(--padding-primary);
+    background-color: var(--backg);
+    border-radius: var(--border-radius);
+    font-size: 13px;
+    color: white;
+    cursor: pointer;
+    border: var(--border-primary);
+}
+.paginate > span.no{
+    background-color: white;
+    border: var(--border-primary);
+    color: gray;
+    cursor: not-allowed;
+    opacity: 0;
+}
+.paginate > div{
+    background-color: white;
+    border-radius: var(--border-radius);
+    outline: var(--border-primary);
+    font-size: 13px;
+    width: fit-content;
+    padding: var(--padding-primary);
+    color: gray;
+}
